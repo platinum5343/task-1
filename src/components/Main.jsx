@@ -1,46 +1,44 @@
-import React, { Fragment } from 'react'
+import { Container } from '@mui/system';
 import classes from './Main.module.css';
 
 const Main = () => {
   return (
-    <Fragment>
+    <Container>
       <div   className={classes.btn}
         id={classes.btn_zuri}>  
           Twitter Link
           
           </div>
-          <div 
-        className={classes.btn}>
-        <a id='btn_zuri'
-       href="https://training.zuri.team/"  >
+        <button id='btn_zuri' 
+       onClick={()=>{
+        window.location.href="https://training.zuri.team/"}}  className={classes.btn}>
           Zuri Team
-          </a>
-          </div>
-          <div 
-        className={classes.btn}>
-        <a id='books' href="https://books.zuri.team/">
+          </button>
+          <button 
+        className={classes.btn}
+       id='books' onClick={()=>{
+        window.location.href="https://books.zuri.team/"}}>
           Zuri books
-          </a>
-          </div>
-          <div 
-        className={classes.btn}>
-        <a id='book_phyton' href="https://background.zuri.team/">
+          </button>
+          <button 
+        className={classes.btn}
+         id='book_phyton' onClick={()=>{
+          window.location.href="https://background.zuri.team/"}}>
           python books
-          </a>
-          </div>
-          <div 
-        className={classes.btn}>
-        <a id='pitch' href="https://books.zuri.team/">
+          </button>
+          <button
+        className={classes.btn}
+         id='pitch' onClick={()=>{
+          window.location.href="https://books.zuri.team/"}}>
           Background check for coders
-          </a>
-          </div>
-          <div 
-        className={classes.btn}>
-        <a href="https://books.zuri.team/design-rules" id='book_design'>
+          </button>
+          <button
+        className={classes.btn}
+        onClick={()=>{
+          window.location.href="https://books.zuri.team/design-rules"}} id='book_design'>
           Design books
-          </a>
-          </div>
-    </Fragment>
+          </button>
+    </Container>
   )
 }
 

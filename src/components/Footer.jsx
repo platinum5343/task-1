@@ -1,33 +1,38 @@
 import React, { Fragment } from 'react'
 import SocialImg from '../../src/assets/Icon.png'
-import GithubImg from '../../src/assets/vector.png'
+import SackImg from '../../src/assets/slack3.jpg'
 import HngImg from '../../src/assets/I4G.png'
 import SlackImg from '../../src/assets/Vectors.png'
 import classes from './Footer.module.css'
+import { Box } from '@mui/material'
 const Footer = () => {
   return (
     <Fragment> 
-        <div className={classes.footer1}>
+        <Box gap={2} className={classes.footer1} >
+        <div>
+    <img src={SackImg} alt="" />
+    </div>
         <div>
     <img src={SocialImg} alt="" />
     </div>
-    <div>
-    <img src={GithubImg} alt="" />
-    </div>
-    </div>   
-    <div className={classes.footer2}>
-    <div className={classes.footer3}>
+    </Box>   
+    <Box px={5}>
+    <hr />
+    </Box>
+    <div className={classes.footer2} pt={5} sx={{xs: { flexDirection: 'column'}}}>
+    <Box px={5} pt={3}>
     <img src={SlackImg} alt="" />
-    </div>
-    <div className={classes.footer3}>
-    <h2>
+    </Box>
+    <div >
+    <Box px={5}  pt={3}>
     hng internship 9 frontend task
-    </h2>
+    </Box>
     
     </div>
-    <div className={classes.footer3}>
+    <Box px={5}  pt={3} className={classes.footer3}>
     <img src={HngImg} alt="" />
-    </div>
+    </Box>
+    
     </div>
     </Fragment>
   )

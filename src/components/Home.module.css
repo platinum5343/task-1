@@ -1,3 +1,15 @@
+.icon{
+    position: absolute;
+    width: 40px;
+    top: 50px;
+    height: 35px;
+    padding: 10px;
+    right: 200px;
+    display: flex;
+    justify-content: end;
+    border-radius: 50%;
+    border: 1.0px dashed #9BA2B3;
+}
 
 #profile_img{
     align-items: center;
